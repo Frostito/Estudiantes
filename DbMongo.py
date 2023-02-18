@@ -5,9 +5,9 @@ class DbMongo:
     
     @staticmethod
     def getDB():
-        user = os.environ['Frostito']
-        password = os.environ['Frostydb']
-        cluster = os.environ['@poounah.shd8rzq.mongodb.net']
+        user = os.environ['User']
+        password = os.environ['Password']
+        cluster = os.environ['Cluster']
         query_string = 'retryWrites=true&w=majority'
 
 
@@ -24,4 +24,4 @@ class DbMongo:
 
         return client, db
 
-        ##mongodb+srv://Frostito:<password>@poounah.shd8rzq.mongodb.net/?retryWrites=true&w=majority
+       
